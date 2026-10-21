@@ -82,7 +82,7 @@ Sur SonarQube, l'exclusion de la couverture de tests (`-Dsonar.coverage.exclusio
 ---
 
 ## 6. Pipeline CI/CD (GitHub Actions)
-L'analyse a été intégrée dans le dépôt via le workflow `.github/workflows/sast.yml`. Il exécute les deux scanners de manière séquentielle lors de chaque événement `push` ou `pull_request` :
+L'analyse a été intégrée dans le dépôt via le workflow `.github/workflows/sast.yml`. Il exécute les scanners en parallèle lors de chaque événement `push` ou `pull_request`[cite: 40] :
 
 ```yaml
 name: SAST Pipeline
@@ -138,4 +138,4 @@ Le workflow s'exécute avec succès sur GitHub Actions :
 ---
 
 ## 8. Conclusion
-La complémentarité entre **Semgrep** et **SonarQube** illustre l'efficacité d'une chaîne DevSecOps robuste : Semgrep offre un retour immédiat aux développeurs lors de la saisie du code pour bloquer les failles courantes à la source (*Shift-Left*), tandis que SonarQube garantit une gouvernance globale de la dette technique, de la maintenabilité et des bダイرات d'acceptation de risque via les *Quality Gates*.
+La complémentarité entre **Semgrep** et **SonarQube** illustre l'efficacité d'une chaîne DevSecOps robuste[cite: 40] : Semgrep offre un retour immédiat aux développeurs lors de la saisie du code pour bloquer les failles courantes à la source (*Shift-Left*)[cite: 10, 40], tandis que SonarQube garantit une gouvernance globale de la dette technique, de la maintenabilité et des barrières d'acceptation de risque via les *Quality Gates*[cite: 9, 10].
