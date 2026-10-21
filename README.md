@@ -45,7 +45,9 @@ L'analyse par motif syntaxique (AST) avec les règles officielles Semgrep (`p/de
 semgrep scan --config="p/default" --config="p/owasp-top-ten" --config="p/python" app.py
 ```
 
+![Semgrep Avant](screenshots/semgrep-initial1.png)
 ![Semgrep Avant](screenshots/semgrep-initial.png)
+![Semgrep Avant](screenshots/semgrep-initial2.png)
 
 ---
 
